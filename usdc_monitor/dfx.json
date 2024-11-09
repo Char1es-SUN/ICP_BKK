@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "usdc_monitor_backend": {
+      "main": "src/usdc_monitor_backend/main.mo",
+      "type": "motoko"
+    },
+    "usdc_monitor_frontend": {
+      "dependencies": [
+        "usdc_monitor_backend"
+      ],
+      "source": [
+        "src/usdc_monitor_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "usdc_monitor_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
